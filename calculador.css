@@ -1,0 +1,25 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+}
+
+.card {
+    background: #E3E3E3;
+    align-content: center;
+}
+
+.centrar {
+    background: #E3E3E3;
+}
+
+.card-body {
+    background: #E3E3E3;
+    width: 500px;
+}
+
+.col-4 {
+    width: 100% !important;
+}
+
+
+
