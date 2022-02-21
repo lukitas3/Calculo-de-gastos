@@ -1,7 +1,6 @@
 const boton = document.querySelector('.btn');
 
     boton.addEventListener('click' , function(){
-
         const input = document.getElementById('disponible').value;
         const monto1 = document.getElementById('monto1').value;
         const monto2 = document.getElementById('monto2').value;
@@ -15,8 +14,15 @@ const boton = document.querySelector('.btn');
         res3 = (res2-monto4);
         total = (res3-monto5);
 
+        if (total >= 0)
             document.getElementById('resultado').innerHTML = `
             <b>Luego de pagar las facturas te quedan: 
-            <i style="color:green">${total}</i>$</b>
+            <i style="color:#198754">${total}</i>$</b>
             `;
+            else if (total < 0)
+                document.getElementById('resultado').innerHTML = `
+                <b>Luego de pagar las facturas te esta faltando: 
+                <i style="color:#DD0B0B">${total}</i>$</b>
+                `;
 });
+
